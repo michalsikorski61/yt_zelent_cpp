@@ -1,11 +1,25 @@
-#include <iostream> // biblioteka - input output stream
+#include <iostream> 
 
-using namespace std; // przestrzeń nazw, by nie trzeba było pisać np. std::cout czy std::endl
+using namespace std; 
 
-int main(){//główna fn zawsze obecna, od niej się zaczyna program
-    cout << "Hello world!"<<endl;//<< operatory wysyłania do strumienia
-    //endl - przejście do nowej linii
-    //cout - wypisz coś do konsoli console output
-    return 0; // koniec zrobiłam wszystko i oddaje kontrolę do nadrzędnego procesu
-    
+int liczba_cukierkow;
+int liczba_uczniow;
+int ile_cukierkow_dla_kazdego;
+int ile_cukierkow_zostaje;
+int main(){
+    cout<<"Ile cukierkow kupila mama: "<<endl;
+    cin>>liczba_cukierkow;
+
+    cout<<"Ile uczniow jest w klasie: "<<endl;
+    cin>>liczba_uczniow;
+
+    ile_cukierkow_dla_kazdego = liczba_cukierkow / (liczba_uczniow-1);
+
+    ile_cukierkow_zostaje = liczba_cukierkow - (liczba_uczniow-1)*ile_cukierkow_dla_kazdego;
+
+    cout<<"Kazdy powinien otrzymac: "<<ile_cukierkow_dla_kazdego<<" cukierkow. "<<endl;
+    cout<<"Na wieczor zostaje: "<<ile_cukierkow_zostaje<<" cukierkow"<<endl;
+
+    return 0; 
+
 }
