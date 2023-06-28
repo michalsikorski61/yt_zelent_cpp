@@ -2,21 +2,23 @@
 
 using namespace std; 
 
-string login,haslo;
+int wiek;
 
 int main(){
-    
-    cout<<"Podaj login: ";
-    cin>>login;
 
-    cout<<"Podaj haslo: ";
-    cin>>haslo;
+    cout<<"Ile masz lat: ";
+    cin>>wiek;
 
-    if( (login=="admin" && haslo=="szarlotka"))
-    {
-        cout<<"Udalo sie zalogowac";
+    if(wiek>=18){
+        cout<<"Jestes pelnoletni ";
     }else{
-        cout<<"Nie udalo sie zalogowac";
+        cout<<"Jestes niepelnoletni ";
+    }
+
+    if(wiek>=35){
+        cout<<"Mozesz kandydowac na prezydenta";
+    }else{
+        cout<<"NIe mozesz kandydowac na prezydenta";
     }
     return 0; 
 
