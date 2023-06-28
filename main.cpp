@@ -2,20 +2,22 @@
 
 using namespace std; 
 
-string PIN;
+string login,haslo;
 
 int main(){
-    cout <<"Witaj w naszym banku!"<<endl;
-    cout<<"Podaj numer PIN:";
-    cin>>PIN;
+    
+    cout<<"Podaj login: ";
+    cin>>login;
 
-    if(PIN=="1234")
+    cout<<"Podaj haslo: ";
+    cin>>haslo;
+
+    if( (login=="admin" && haslo=="szarlotka"))
     {
-        cout<<"Poprawny PIN";
+        cout<<"Udalo sie zalogowac";
     }else{
-        cout<<"PIN niepoprawny";
+        cout<<"Nie udalo sie zalogowac";
     }
-
     return 0; 
 
 }
