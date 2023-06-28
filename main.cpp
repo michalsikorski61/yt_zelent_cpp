@@ -9,16 +9,12 @@ int main(){
     cout<<"Ile masz lat: ";
     cin>>wiek;
 
-    if(wiek>=18){
-        cout<<"Jestes pelnoletni ";
+    if(wiek< 18){
+        cout<<"Jestes niepelnoletni i nie mozesz zostac prezydentem ";
+    }else if(wiek <35){
+        cout<<"Jestes pelnoletni, ale nie mozesz zostac prezydentem";
     }else{
-        cout<<"Jestes niepelnoletni ";
-    }
-
-    if(wiek>=35){
-        cout<<"Mozesz kandydowac na prezydenta";
-    }else{
-        cout<<"NIe mozesz kandydowac na prezydenta";
+        cout<<"Jestes pelnoletni i mozesz zostac prezydentem";
     }
     return 0; 
 
