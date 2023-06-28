@@ -18,7 +18,7 @@ int main(){
     ile_cukierkow_zostaje = liczba_cukierkow - (liczba_uczniow-1)*ile_cukierkow_dla_kazdego;
 
     cout<<"Kazdy powinien otrzymac: "<<ile_cukierkow_dla_kazdego<<" cukierkow. "<<endl;
-    cout<<"Na wieczor zostaje: "<<ile_cukierkow_zostaje<<" cukierkow"<<endl;
+    cout<<"Na wieczoro zostaje: "<<ile_cukierkow_zostaje<<" cukierkow"<<endl;
 
     return 0; 
 
