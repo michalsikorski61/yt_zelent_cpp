@@ -1,19 +1,21 @@
 #include <iostream>
-#include <windows.h>
-#include <cstdlib>
+
 
 using namespace std;
 
+string imie; int liczba_powtorzen;
 int main()
 {
 
-    for (int i = 15; i >= 0; i--)
-    {
-        Sleep(1000);
-        system("cls");
-        cout << i << endl;
+    cout<<"Ile razy wypisac imie: ";
+    cin>>liczba_powtorzen;
+
+    cout<<"Podaj imie: ";
+    cin>>imie;
+
+    for(int i = 0;i<liczba_powtorzen;i++){
+        cout<<i+1<<". "<<imie<<endl;
     }
-    cout << "JEBUT";
 
     return 0;
 }
