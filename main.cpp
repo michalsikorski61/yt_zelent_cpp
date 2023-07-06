@@ -3,19 +3,19 @@
 
 using namespace std;
 
-string imie; int liczba_powtorzen;
+int populacja=1;
+int godzin=0;
 int main()
 {
 
-    cout<<"Ile razy wypisac imie: ";
-    cin>>liczba_powtorzen;
+    while (populacja<=1000000000)
+    {
+        godzin++;
+        populacja*=2;
 
-    cout<<"Podaj imie: ";
-    cin>>imie;
-
-    for(int i = 0;i<liczba_powtorzen;i++){
-        cout<<i+1<<". "<<imie<<endl;
+        cout<<"Minelo "<<godzin<<"godzin. Populacja wynosi "<<populacja<<endl;
     }
+    
 
     return 0;
 }
